@@ -13,7 +13,7 @@ This sample project shows how to setup your Apps Script project to register a Gm
 5) Run the script from the cuurrent web app URL. (the /exec one).  You will get an error about no doGet().  Copy the URL it redirected you toward.  
 6) Add the URL to the `WEBHOOK_URL` var in main.gs  
 7) Open up the project developers console:  
-&nbsp;&nbsp;&nbsp;&nbsp;a) Under Credentials -> Domain Verification: Add the url you copied in `WEBHOOK_URL` in step 6  
+&nbsp;&nbsp;&nbsp;&nbsp;a) Under Credentials -> Domain Verification: Add the url you copied in `WEBHOOK_URL` in step 6 ommiting the `exec` from the end  
 &nbsp;&nbsp;&nbsp;&nbsp;b) Create a new service account.  Download the credentials as json.  
 &nbsp;&nbsp;&nbsp;&nbsp;c) Under Overview:  Enable the PubSub API and the Gmail API   
 &nbsp;&nbsp;&nbsp;&nbsp;d) Copy the json credentials and paste it into script properties under the key `jsonKey`.  
