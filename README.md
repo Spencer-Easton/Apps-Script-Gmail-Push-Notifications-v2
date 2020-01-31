@@ -3,7 +3,7 @@ An updated version of  Gmail Push Notifications in Apps Script
 
 This sample project shows how to setup your Apps Script project to register a Gmail account for push notifications and how to programmatically set up the the proper pubsub publishing channels and subscriptions.   
 
-###Setup
+### Setup
 1) Create a new Apps Script project using the two .gs files in this repo.   
 2) Add the following libraries:  
 &nbsp;&nbsp;&nbsp;&nbsp;PubSubApp - `1BX8k4tkiA3CZGIZ0hHccfiF7o-EvjqLCt3hoU3osDQBhnGlQTRnawOGE`  
@@ -21,7 +21,7 @@ This sample project shows how to setup your Apps Script project to register a Gm
 9) Create a spreadsheet.  Create a sheet called `Log`.  Copy the file Id and paste it in `SpreadsheetApp.openById()` of doPost().  
 9) Update the webapp version to pick up changes made to the project.  
   
-###Running the sample code  
+### Running the sample code  
 1) Run `setupPubSub()`  
 2) Run `enrollEmail()` to start listening to your Gmail notifications.  They will be logged to the spreadsheet set up in step 9.  
 3) Run `disEnrollEmail()` to stop listening to your Gmail notifications.  
