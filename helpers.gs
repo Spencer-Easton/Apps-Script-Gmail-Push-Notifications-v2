@@ -78,7 +78,7 @@ function getTokenService(){
   var jsonKey = JSON.parse(PropertiesService.getScriptProperties().getProperty("jsonKey"));  
   var privateKey = jsonKey.private_key;
   var serviceAccountEmail = jsonKey.client_email; 
-  var sa = GSApp.init(privateKey, ['https://www.googleapis.com/auth/pubsub'], serviceAccountEmail);
+  var sa = init(privateKey, ['https://www.googleapis.com/auth/pubsub'], serviceAccountEmail);
   sa.addUser(serviceAccountEmail)
   .requestToken();
   return sa.tokenService(serviceAccountEmail);
